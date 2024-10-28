@@ -4,6 +4,10 @@ tests:
     message: "An install plan for a subscription is pending installation"
   inputPath: testdata/install_plan_pending.yaml
 - healthStatus:
+    status: Progressing
+    message: "An install plan for a subscription is pending installation"
+  inputPath: testdata/first_update_including_status.yaml
+- healthStatus:
     status: Degraded
     message: "1: CatalogSourcesUnhealthy | True\n"
   inputPath: testdata/catalog_sources_unhealthy.yaml
